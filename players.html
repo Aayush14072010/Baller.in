@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baller - Popular Players</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #ffffff; color: #111; }
+        a { text-decoration: none; color: inherit; }
+        .card { 
+            width: 280px; 
+            border: 1px solid #eee; 
+            border-radius: 15px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+            background: #fff;
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: translateY(-5px); }
+        .img-container { height: 220px; width: 100%; overflow: hidden; background-color: #f0f0f0; }
+        .img-container img { width: 100%; height: 100%; object-fit: cover; }
+        
+        /* Specific alignment to prevent heads from being cut off */
+        .top-align { object-position: top; }
+        .center-align { object-position: center; }
+    </style>
+</head>
+<body>
+    <header style="background-color: #fcf6f5; padding: 20px 60px; display: flex; justify-content: space-between; align-items: center; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+        <div style="font-size: 24px; font-weight: 700;">Baller</div>
+        <nav>
+            <a href="index1.html" style="margin: 0 15px; font-weight: 600;">Home</a>
+            <a href="rules.html" style="margin: 0 15px; font-weight: 600;">Rules</a>
+            <a href="history.html" style="margin: 0 15px; font-weight: 600;">History</a>
+            <a href="players.html" style="margin: 0 15px; font-weight: 600; color: #004aad;">Popular players</a>
+            <a href="skills.html" style="margin: 0 15px; font-weight: 600;">Popular skills</a>
+        </nav>
+    </header>
+
+    <main style="padding: 60px;">
+        <h1 style="text-align: center; margin-bottom: 20px;">Legends of the Game</h1>
+        <p style="text-align: center; max-width: 600px; margin: 0 auto 50px auto; color: #666;">
+            Football has seen many greats, but these four have defined generations with their skill, leadership, and records.
+        </p>
+        
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://en.wikipedia.org/wiki/Special:FilePath/Lionel_Messi_20180626.jpg?width=500" alt="Lionel Messi" class="center-align">
+                </div>
+                <div style="padding: 20px;">
+                    <h2 style="margin: 0 0 5px 0; font-size: 20px;">Lionel Messi</h2>
+                    <p style="font-size: 13px; color: #555;">Argentina | FWD</p>
+                    <p style="font-size: 14px;">The most decorated player in history. Known for his low center of gravity and playmaking skills.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://en.wikipedia.org/wiki/Special:FilePath/Cristiano_Ronaldo_Al-Nassr_2023.jpg?width=500" alt="Cristiano Ronaldo" class="top-align">
+                </div>
+                <div style="padding: 20px;">
+                    <h2 style="margin: 0 0 5px 0; font-size: 20px;">Cristiano Ronaldo</h2>
+                    <p style="font-size: 13px; color: #555;">Portugal | FWD</p>
+                    <p style="font-size: 14px;">The all-time leading goalscorer in official matches, famous for his incredible physique and dedication.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://en.wikipedia.org/wiki/Special:FilePath/Argentina_celebrando_copa_(cropped).jpg?width=500" alt="Diego Maradona" class="top-align">
+                </div>
+                <div style="padding: 20px;">
+                    <h2 style="margin: 0 0 5px 0; font-size: 20px;">Diego Maradona</h2>
+                    <p style="font-size: 13px; color: #555;">Argentina | AM</p>
+                    <p style="font-size: 14px;">A genius with the ball who single-handedly carried Argentina to the 1986 World Cup victory.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://en.wikipedia.org/wiki/Special:FilePath/Zinedine_Zidane_by_Tasnim_01.jpg?width=500" alt="Zinedine Zidane" class="center-align">
+                </div>
+                <div style="padding: 20px;">
+                    <h2 style="margin: 0 0 5px 0; font-size: 20px;">Zinedine Zidane</h2>
+                    <p style="font-size: 13px; color: #555;">France | CAM</p>
+                    <p style="font-size: 14px;">Known for his elegance and the "Roulette" move. A champion for both France and Real Madrid.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="https://www.transfermarkt.com/spieler-statistik/wertvollstespieler/marktwerttop" target="_blank" style="background-color: #3b82f6; color: white; padding: 15px 30px; border-radius: 30px; font-weight: 700;">View Current Top Players & Stats &rarr;</a>
+        </div>
+    </main>
+</body>
+</html>
